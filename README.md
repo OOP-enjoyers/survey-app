@@ -28,7 +28,7 @@
 ## Описание API
 
 **Создание опроса** `/api/v1/add_survey`
-
+Параметры:
 ```json
 {
     "status_id": 1,
@@ -64,9 +64,18 @@
     ]
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200,
+    "content": {
+        "survey_id": 1
+    }
+}
+```
 
 **Изменение опроса** `/api/v1/edit_survey`
-
+Параметры:
 ```json
 {
     "survey_id": 1,
@@ -103,17 +112,29 @@
     ]
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200
+}
+```
 
 **Удаление опроса** `/api/v1/remove_survey`
-
+Параметры:
 ```json
 {
     "survey_id": 1
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200
+}
+```
 
 **Добавление пользователя** `/api/v1/add_user`
-
+Параметры:
 ```json
 {
     "role_id": 1,
@@ -122,9 +143,38 @@
     "password": "UserPassword"
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200,
+    "content": {
+        "user_id": 1
+    }
+}
+```
+
+**Получение пользователя по ID** `/api/v1/get_user`
+Параметры:
+```json
+{
+    "user_id": 1
+}
+```
+Возвращает:
+```json
+{
+    "status": 200,
+    "content": {
+        "user_id": 1,
+        "role_id": 1,
+        "full_name": "UserFullname",
+        "email": "UserEmail"
+    }
+}
+```
 
 **Изменение пользователя** `/api/v1/edit_user`
-
+Параметры:
 ```json
 {
     "user_id": 1,
@@ -134,17 +184,29 @@
     "password": "UserPassword"
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200
+}
+```
 
 **Удаление пользователя** `/api/v1/remove_user`
-
+Параметры:
 ```json
 {
     "user_id": 1
 }
 ```
+Возвращает:
+```json
+{
+    "status": 200
+}
+```
 
 **Добавление ответов на опрос от пользователя** `/api/v1/passing_survey`
-
+Параметры:
 ```json
 {
     "survey_id": 1,
@@ -159,5 +221,11 @@
             "content": "Answer2"
         }
     ]
+}
+```
+Возвращает:
+```json
+{
+    "status": 200
 }
 ```
