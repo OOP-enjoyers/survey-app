@@ -44,14 +44,8 @@
             "description": "QuestionDescription1",
             "type_id": 1,
             "answers": [
-                {
-                    "content": "Answer1",
-                    "is_right": false
-                },
-                {
-                    "content": "Answer2",
-                    "is_right": true
-                }
+                "Answer1",
+                "Answer2"
             ]
         },
         {
@@ -59,10 +53,7 @@
             "description": "QuestionDescription2",
             "type_id": 1,
             "answers": [
-                {
-                    "content": "Answer1",
-                    "is_right": false
-                }
+                "Answer1"
             ]
         }
     ]
@@ -72,6 +63,7 @@
 ```json
 {
     "status": 200,
+    "message": "OK",
     "content": {
         "survey_id": 1
     }
@@ -96,14 +88,8 @@
             "description": "QuestionDescription1",
             "type_id": 1,
             "answers": [
-                {
-                    "content": "Answer1",
-                    "is_right": false
-                },
-                {
-                    "content": "Answer2",
-                    "is_right": true
-                }
+                "Answer1",
+                "Answer2"
             ]
         },
         {
@@ -111,10 +97,7 @@
             "description": "QuestionDescription2",
             "type_id": 1,
             "answers": [
-                {
-                    "content": "Answer1",
-                    "is_right": false
-                }
+                "Answer1"
             ]
         }
     ]
@@ -123,7 +106,14 @@
 Возвращает:
 ```json
 {
-    "status": 200
+    "status": 200,
+    "message": "OK"
+}
+```
+```json
+{
+    "status": 405,
+    "message": "Method is not allowed when the survey is published"
 }
 ```
 ---
@@ -141,7 +131,8 @@
 Возвращает:
 ```json
 {
-    "status": 200
+    "status": 200,
+    "message": "OK"
 }
 ```
 ---
@@ -163,6 +154,7 @@
 ```json
 {
     "status": 200,
+    "message": "OK",
     "content": {
         "user_id": 1
     }
@@ -184,6 +176,7 @@
 ```json
 {
     "status": 200,
+    "message": "OK",
     "content": {
         "user_id": 1,
         "role_id": 1,
@@ -211,7 +204,8 @@
 Возвращает:
 ```json
 {
-    "status": 200
+    "status": 200,
+    "message": "OK"
 }
 ```
 ---
@@ -229,7 +223,8 @@
 Возвращает:
 ```json
 {
-    "status": 200
+    "status": 200,
+    "message": "OK"
 }
 ```
 ---
@@ -246,11 +241,16 @@
     "answers": [
         {
             "question_id": 1,
-            "content": "Answer1"
+            "content": [
+                "Answer1"
+            ]
         },
         {
             "question_id": 2,
-            "content": "Answer2"
+            "content": [
+                "Answer1",
+                "Answer2"
+            ]
         }
     ]
 }
@@ -258,6 +258,7 @@
 Возвращает:
 ```json
 {
-    "status": 200
+    "status": 200,
+    "message": "OK"
 }
 ```
