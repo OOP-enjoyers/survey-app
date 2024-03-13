@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mCjdZKx9SmQMD6w09RkmNJE8nqE2gf15H3Bmhkg3mqM=",
+  "Source": "SurveyPlatform.Presentation.Http",
+  "BasePath": "_content/SurveyPlatform.Presentation.Http",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,7 +1,6 @@
-﻿namespace SurveyPlatform.Application.Contracts;
+﻿using SurveyPlatform.Application.Contracts.Models;
 
-using SurveyPlatform.Application.Contracts.Models;
-
+namespace SurveyPlatform.Application.Contracts;
 public interface ISurveyPassingService
 {
     // Передача ответов пользователя на опрос

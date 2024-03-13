@@ -1,19 +1,20 @@
-﻿namespace SurveyPlatform.Application.Contracts.Models;
+﻿using System.Collections.ObjectModel;
 
-public class SurveyEditRequest(
+namespace SurveyPlatform.Application.Contracts.Models;
+public abstract class SurveyEditRequest(
     int surveyId,
     int statusId,
     string title,
     string description,
-    List<QuestionRequest> questions)
+    IList<QuestionRequest> questions)
 {
-    public int SurveyId { get; set; } = surveyId;
+    public int SurveyId { get; } = surveyId;
 
-    public int StatusId { get; set; } = statusId;
+    public int StatusId { get; } = statusId;
 
-    public string Title { get; set; } = title;
+    public string Title { get; } = title;
 
-    public string Description { get; set; } = description;
+    public string Description { get; } = description;
 
-    public List<QuestionRequest> Questions { get; set; } = questions;
+    public IReadOnlyCollection<QuestionRequest> Questions { get; } = new ReadOnlyCollection<QuestionRequest>(questions);
 }

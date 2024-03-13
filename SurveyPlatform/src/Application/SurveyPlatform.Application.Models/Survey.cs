@@ -1,6 +1,10 @@
 ﻿namespace SurveyPlatform.Application.Models;
 
-public class Survey(int id, string title, string description, Status status)
+public class Survey(
+    int id,
+    string title,
+    string description,
+    Status status)
 {
     public int Id { get; private set; } = id;
 

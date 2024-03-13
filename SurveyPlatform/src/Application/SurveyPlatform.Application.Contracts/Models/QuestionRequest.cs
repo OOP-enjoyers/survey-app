@@ -1,12 +1,13 @@
-﻿namespace SurveyPlatform.Application.Contracts.Models;
+﻿using System.Collections.ObjectModel;
 
-public class QuestionRequest(string title, string description, int typeId, List<AnswerRequest> answers)
+namespace SurveyPlatform.Application.Contracts.Models;
+public abstract class QuestionRequest(string title, string description, int typeId, IList<AnswerRequest> answers)
 {
-    public string Title { get; set; } = title;
+    public string Title { get; } = title;
 
-    public string Description { get; set; } = description;
+    public string Description { get; } = description;
 
-    public int TypeId { get; set; } = typeId;
+    public int TypeId { get; } = typeId;
 
-    public List<AnswerRequest> Answers { get; set; } = answers;
+    public IReadOnlyCollection<AnswerRequest> Answers { get; } = new ReadOnlyCollection<AnswerRequest>(answers);
 }

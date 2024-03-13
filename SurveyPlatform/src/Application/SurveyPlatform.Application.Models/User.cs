@@ -1,6 +1,11 @@
 ﻿namespace SurveyPlatform.Application.Models;
 
-public class User(int id, Role role, string fullName, string email, string password)
+public class User(
+    int id,
+    Role role,
+    string fullName,
+    string email,
+    string password)
 {
     public int Id { get; private set; } = id;
 
