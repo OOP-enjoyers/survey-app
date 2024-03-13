@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\SurveyPlatform.Application.Models\SurveyPlatform.Application.Models.csproj"/>
+    </ItemGroup>
+
+</Project>
