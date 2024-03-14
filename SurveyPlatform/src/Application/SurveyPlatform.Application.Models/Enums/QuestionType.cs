@@ -1,4 +1,4 @@
-﻿namespace SurveyPlatform.Application.Models;
+﻿namespace SurveyPlatform.Application.Models.Enums;
 
 public enum QuestionType
 {
