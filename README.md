@@ -10,16 +10,15 @@
 
 ## Доменные сущности
 
-| Таблица            | Описание                                  | Поля                                                                                                   |
-| ------------------ | ----------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `user`             | Пользователи                              | `id` (PK)<br>`role_id` (FK)<br>`full_name`<br>`email`<br>`password`                                    |
-| `survey`           | Опросы                                    | `id` (PK)<br>`title`<br>`description`<br>`status_id`                                                   |
-| `question`         | Вопросы в опросах                         | `id` (PK)<br>`survey_id` (FK)<br>`question_type_id` (FK)<br>`title`<br>`description`<br>`is_necessary` |
-| `question_type`    | Типы вопросов                             | `id` (PK)<br>`type_title`                                                                              |
-| `question_answer`  | Ответы на вопросы                         | `id` (PK)<br>`question_id` (FK)<br>`is_right`<br>`content`                                             |
-| `user_answer`      | Ответы пользователей на вопросы           | `id` (PK)<br>`user_id` (FK)<br>`question_answer_ids` (FK)<br>`content`                                 |
-| `role`             | Роли пользователей                        | `id` (PK)<br>`title`                                                                                   |
-| `status`           | Статусы опросов                           | `id` (PK)<br>`title`                                                                                   |
+| Таблица            | Описание                                  | Поля                                                                                                                |
+| ------------------ | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `user`             | Пользователи                              | `id` (PK)<br>`role_id` (FK)<br>`full_name`<br>`email`<br>`password`                                                 |
+| `survey`           | Опросы                                    | `id` (PK)<br>`title`<br>`description`<br>`status_id`                                                                |
+| `question`         | Вопросы в опросах                         | `id` (PK)<br>`survey_id` (FK)<br>`question_type_id` (FK)<br>`title`<br>`description`<br>`is_necessary`<br>`answers` |
+| `question_type`    | Типы вопросов                             | `id` (PK)<br>`type_title`                                                                                           |
+| `response`         | Ответы пользователей на вопросы           | `id` (PK)<br>`user_id` (FK)<br>`question_answer_ids` (FK)<br>`content`                                              |
+| `role`             | Роли пользователей                        | `id` (PK)<br>`title`                                                                                                |
+| `status`           | Статусы опросов                           | `id` (PK)<br>`title`                                                                                                |
 
 ## Диаграмма
 
