@@ -4,13 +4,18 @@ using SurveyPlatform.Application.Models;
 namespace SurveyPlatform.Infrastructure.Persistence.Contexts;
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext() { }
+    public DbSet<User> Users { get; set; } = null!;
 
-    required public DbSet<User> Users { get; set; }
+    public DbSet<Survey> Surveys { get; set; } = null!;
 
-    required public DbSet<Question> Questions { get; set; }
+    public DbSet<Response> Responses { get; set; } = null!;
 
-    required public DbSet<Survey> Surveys { get; set; }
+    public DbSet<Question> Questions { get; set; } = null!;
+
+    public ApplicationDbContext()
+    {
+        Database.EnsureCreated();
+    }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
