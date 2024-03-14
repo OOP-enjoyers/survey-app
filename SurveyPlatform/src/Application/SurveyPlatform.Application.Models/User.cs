@@ -1,4 +1,7 @@
-﻿namespace SurveyPlatform.Application.Models;
+﻿#pragma warning disable IDE0051
+using SurveyPlatform.Application.Models.Enums;
+
+namespace SurveyPlatform.Application.Models;
 
 public class User(
     int id,
@@ -17,3 +20,4 @@ public class User(
 
     private string Password { get; set; } = password;
 }
+#pragma warning restore IDE0051
