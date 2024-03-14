@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SurveyPlatform.Application.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca2eef1558c081be2f128155666bea927dbd0f6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49c964b558aa31e83d0f96a65b01df13a86d5bba")]
 [assembly: System.Reflection.AssemblyProductAttribute("SurveyPlatform.Application.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SurveyPlatform.Application.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

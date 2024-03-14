@@ -1,0 +1,15 @@
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\bin\Debug\net8.0\SurveyPlatform.Application.Models.deps.json
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\bin\Debug\net8.0\SurveyPlatform.Application.Models.dll
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\bin\Debug\net8.0\SurveyPlatform.Application.Models.pdb
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\bin\Debug\net8.0\SurveyPlatform.Application.Models.xml
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.csproj.AssemblyReference.cache
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.AssemblyInfoInputs.cache
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.AssemblyInfo.cs
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.csproj.CoreCompileInputs.cache
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.sourcelink.json
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.dll
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\refint\SurveyPlatform.Application.Models.dll
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.xml
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\SurveyPlatform.Application.Models.pdb
+C:\Users\dakota\Documents\GitHub\survey-app\SurveyPlatform\src\Application\SurveyPlatform.Application.Models\obj\Debug\net8.0\ref\SurveyPlatform.Application.Models.dll

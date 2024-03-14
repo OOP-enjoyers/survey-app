@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "qTDu/agmvnMGlZTev7f+au97HV7SbZ9ECwcGt+YedNw=",
+  "Source": "SurveyPlatform",
+  "BasePath": "_content/SurveyPlatform",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
+      "Version": 2,
+      "Source": "SurveyPlatform.Presentation.Http",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
