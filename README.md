@@ -22,7 +22,7 @@
 
 ## Диаграмма
 
-![Диаграмма](https://i.postimg.cc/02QhBM0X/erd.png)
+![Диаграмма](https://i.postimg.cc/2SLrH4ft/2024-03-14-204145854.png)
 
 ## Описание API
 
