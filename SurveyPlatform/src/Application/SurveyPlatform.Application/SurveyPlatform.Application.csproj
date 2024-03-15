@@ -3,6 +3,7 @@
     <ItemGroup>
         <ProjectReference Include="..\SurveyPlatform.Application.Abstractions\SurveyPlatform.Application.Abstractions.csproj"/>
         <ProjectReference Include="..\SurveyPlatform.Application.Contracts\SurveyPlatform.Application.Contracts.csproj"/>
+        <ProjectReference Include="..\SurveyPlatform.Application.Models\SurveyPlatform.Application.Models.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
