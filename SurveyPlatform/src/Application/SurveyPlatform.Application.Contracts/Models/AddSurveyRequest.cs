@@ -1,7 +1,9 @@
-﻿using System.Collections.ObjectModel;
+﻿using SurveyPlatform.Application.Contracts.HelpModels;
+using System.Collections.ObjectModel;
 
 namespace SurveyPlatform.Application.Contracts.Models;
-public abstract class SurveyCreationRequest(int statusId, string title, string description, IList<QuestionRequest> questions)
+
+public abstract class AddSurveyRequest(int statusId, string title, string description, IList<QuestionRequest> questions)
 {
     public int StatusId { get; } = statusId;
 

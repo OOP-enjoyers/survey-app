@@ -1359,24 +1359,25 @@
       "StyleCop.Analyzers >= 1.2.0-beta.435",
       "SurveyPlatform.Application.Abstractions >= 1.0.0",
       "SurveyPlatform.Application.Contracts >= 1.0.0",
+      "SurveyPlatform.Application.Models >= 1.0.0",
       "System.Linq.Async >= 6.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dakota\\.nuget\\packages\\": {}
+    "C:\\Users\\Serge\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
+      "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
       "projectName": "SurveyPlatform.Application",
-      "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
-      "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\obj\\",
+      "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
+      "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+      "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1388,11 +1389,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj"
+            "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
+              "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj"
             },
-            "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
-              "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj"
+            "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
+              "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj"
+            },
+            "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
+              "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
             }
           }
         }
@@ -1465,7 +1469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

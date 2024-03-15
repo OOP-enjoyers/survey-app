@@ -1,6 +1,6 @@
 ﻿namespace SurveyPlatform.Application.Models.Enums;
 
-public enum Role
+public enum UserRole
 {
     Creator,
     Participant,

@@ -1,6 +1,6 @@
 ﻿namespace SurveyPlatform.Application.Models.Enums;
 
-public enum Status
+public enum SurveyStatus
 {
     Created,
     Published,

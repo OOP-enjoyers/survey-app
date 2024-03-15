@@ -166,20 +166,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dakota\\.nuget\\packages\\": {}
+    "C:\\Users\\Serge\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
+      "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
       "projectName": "SurveyPlatform.Presentation.Http",
-      "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
-      "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\obj\\",
+      "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
+      "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+      "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -259,7 +259,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

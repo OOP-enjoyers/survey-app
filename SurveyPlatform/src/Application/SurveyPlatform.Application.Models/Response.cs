@@ -1,4 +1,5 @@
 ﻿#pragma warning disable IDE0051
+
 using System.Collections.ObjectModel;
 
 namespace SurveyPlatform.Application.Models;
@@ -17,4 +18,5 @@ public class Response(
 
     private int QuestionId { get; set; } = questionId;
 }
+
 #pragma warning restore IDE0051

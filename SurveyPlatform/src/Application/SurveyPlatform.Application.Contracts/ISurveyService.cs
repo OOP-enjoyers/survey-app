@@ -1,17 +1,19 @@
 ﻿using SurveyPlatform.Application.Contracts.Models;
+using SurveyPlatform.Application.Models;
 
 namespace SurveyPlatform.Application.Contracts;
+
 public interface ISurveyService
 {
-    // Создание нового опроса
-    void CreateSurvey(SurveyCreationRequest request);
+    // Добавление опроса
+    void AddSurvey(AddSurveyRequest request);
 
-    // Изменение существующего опроса
-    void EditSurvey(SurveyEditRequest request);
+    // Получение опроса по id
+    Survey GetSurvey(int surveyId);
+
+    // Изменение опроса
+    void EditSurvey(EditSurveyRequest request);
 
     // Удаление опроса
     void RemoveSurvey(int surveyId);
-
-    // Получение опроса по id
-    void GetSurvey(int surveyId);
 }

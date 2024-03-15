@@ -1,4 +1,5 @@
 ﻿#pragma warning disable IDE0051
+
 using SurveyPlatform.Application.Models.Enums;
 
 namespace SurveyPlatform.Application.Models;
@@ -7,7 +8,7 @@ public class Survey(
     int id,
     string title,
     string description,
-    Status status)
+    SurveyStatus surveyStatus)
 {
     public int Id { get; private set; } = id;
 
@@ -15,6 +16,7 @@ public class Survey(
 
     public string Description { get; private set; } = description;
 
-    private Status Status { get; set; } = status;
+    private SurveyStatus SurveyStatus { get; set; } = surveyStatus;
 }
+
 #pragma warning restore IDE0051

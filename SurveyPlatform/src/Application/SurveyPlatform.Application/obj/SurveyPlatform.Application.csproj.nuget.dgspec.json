@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj": {}
+    "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
+    "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj",
+        "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj",
         "projectName": "SurveyPlatform.Application.Abstractions",
-        "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj",
-        "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\obj\\",
+        "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+        "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
-                "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
+              "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
+                "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
               }
             }
           }
@@ -121,22 +121,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
+    "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj",
+        "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj",
         "projectName": "SurveyPlatform.Application.Contracts",
-        "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj",
-        "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\obj\\",
+        "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+        "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -148,8 +148,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
-                "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
+              "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
+                "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
               }
             }
           }
@@ -217,22 +217,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
+    "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj",
+        "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj",
         "projectName": "SurveyPlatform.Application.Models",
-        "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj",
-        "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\obj\\",
+        "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj",
+        "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+        "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -309,22 +309,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj": {
+    "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
+        "projectUniqueName": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
         "projectName": "SurveyPlatform.Application",
-        "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
-        "packagesPath": "C:\\Users\\dakota\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\obj\\",
+        "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\SurveyPlatform.Application.csproj",
+        "packagesPath": "C:\\Users\\Serge\\.nuget\\packages\\",
+        "outputPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "C:\\Users\\dakota\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -336,11 +336,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
-                "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj"
+              "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj": {
+                "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Abstractions\\SurveyPlatform.Application.Abstractions.csproj"
               },
-              "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\dakota\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj"
+              "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
+                "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj"
+              },
+              "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj": {
+                "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Models\\SurveyPlatform.Application.Models.csproj"
               }
             }
           }
@@ -413,7 +416,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

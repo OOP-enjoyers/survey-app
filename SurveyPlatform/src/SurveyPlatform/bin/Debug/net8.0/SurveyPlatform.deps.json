@@ -1307,6 +1307,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "SurveyPlatform.Application.Abstractions": "1.0.0",
           "SurveyPlatform.Application.Contracts": "1.0.0",
+          "SurveyPlatform.Application.Models": "1.0.0",
           "System.Linq.Async": "6.0.1"
         },
         "runtime": {

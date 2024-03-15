@@ -1,17 +1,19 @@
 ﻿using SurveyPlatform.Application.Contracts.Models;
+using SurveyPlatform.Application.Models;
 
 namespace SurveyPlatform.Application.Contracts;
+
 public interface IUserService
 {
     // Добавление нового пользователя
-    void AddUser(UserCreationRequest request);
+    void AddUser(AddUserRequest request);
+
+    // Получение пользователя по id
+    User GetUser(int userId);
 
     // Изменение существующего пользователя
-    void EditUser(UserEditRequest request);
+    void EditUser(EditUserRequest request);
 
     // Удаление пользователя
     void RemoveUser(int userId);
-
-    // Получение пользователя по id
-    void GetUser(int userId);
 }

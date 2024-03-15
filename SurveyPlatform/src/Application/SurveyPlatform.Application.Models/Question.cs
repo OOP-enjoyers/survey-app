@@ -1,4 +1,5 @@
 ﻿#pragma warning disable IDE0051
+
 using SurveyPlatform.Application.Models.Enums;
 using System.Collections.ObjectModel;
 
@@ -27,4 +28,5 @@ public class Question(
 
     private QuestionType QuestionType { get; set; } = questionType;
 }
+
 #pragma warning restore IDE0051
