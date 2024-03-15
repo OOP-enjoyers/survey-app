@@ -11,4 +11,7 @@ public interface ISurveyService
 
     // Удаление опроса
     void RemoveSurvey(int surveyId);
+
+    // Получение опроса по id
+    void GetSurvey(int surveyId);
 }

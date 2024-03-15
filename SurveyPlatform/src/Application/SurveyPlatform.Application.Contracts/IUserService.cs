@@ -13,5 +13,5 @@ public interface IUserService
     void RemoveUser(int userId);
 
     // Получение пользователя по id
-    void FindUser(int userId);
+    void GetUser(int userId);
 }

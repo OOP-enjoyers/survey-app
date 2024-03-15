@@ -1,13 +1,13 @@
 using SurveyPlatform.Application.Contracts;
 using SurveyPlatform.Application.Contracts.Models;
 
-namespace SurveyPlatform.Application;
+namespace SurveyPlatform.Application.Services;
 
-public class SurveyPassingService(): ISurveyPassingService
+public class SurveyPassingService() : ISurveyPassingService
 {
     private readonly IResponseRepository _responseRepository;
 
-    public SurveyPassingService(IResponseRepository responseRepository)
+    public SurveyPassingService(IResponseRepository responseRepository) : this()
     {
         _responseRepository = responseRepository;
     }

@@ -4,6 +4,7 @@ namespace SurveyPlatform.Application.Contracts.Models;
 
 public class AnswerRequest(int questionId, IList<string> content)
 {
-    public int QuestionId { get; }
-    public IReadOnlyCollection<string> Content { get; set; } = content;
+    public int QuestionId { get; } = questionId;
+
+    public IReadOnlyCollection<string> Content { get; set; } = new ReadOnlyCollection<string>(content);
 }
