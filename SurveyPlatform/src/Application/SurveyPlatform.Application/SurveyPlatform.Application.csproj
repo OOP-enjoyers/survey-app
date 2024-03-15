@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
+        <ProjectReference Include="..\..\Infrastructure\SurveyPlatform.Infrastructure.Persistence\SurveyPlatform.Infrastructure.Persistence.csproj" />
         <ProjectReference Include="..\SurveyPlatform.Application.Abstractions\SurveyPlatform.Application.Abstractions.csproj"/>
         <ProjectReference Include="..\SurveyPlatform.Application.Contracts\SurveyPlatform.Application.Contracts.csproj"/>
         <ProjectReference Include="..\SurveyPlatform.Application.Models\SurveyPlatform.Application.Models.csproj"/>

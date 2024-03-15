@@ -4,6 +4,18 @@
         <name>SurveyPlatform.Infrastructure.Persistence</name>
     </assembly>
     <members>
+        <member name="T:SurveyPlatform.Infrastructure.Persistence.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:SurveyPlatform.Infrastructure.Persistence.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SurveyPlatform.Infrastructure.Persistence.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SurveyPlatform.Infrastructure.Persistence.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="T:SurveyPlatform.Infrastructure.Persistence.Migrations.MigrationRunnerService">
             <summary>
                 Background service for applying migrations.

@@ -16,7 +16,7 @@ public class Survey(
 
     public string Description { get; private set; } = description;
 
-    private SurveyStatus SurveyStatus { get; set; } = surveyStatus;
+    public SurveyStatus SurveyStatus { get; set; } = surveyStatus;
 }
 
 #pragma warning restore IDE0051

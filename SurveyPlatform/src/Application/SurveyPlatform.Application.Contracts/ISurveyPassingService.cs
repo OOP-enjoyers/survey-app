@@ -1,13 +1,12 @@
-﻿using SurveyPlatform.Application.Contracts.HelpModels;
-using SurveyPlatform.Application.Contracts.Models;
+﻿using SurveyPlatform.Application.Models;
 
 namespace SurveyPlatform.Application.Contracts;
 
 public interface ISurveyPassingService
 {
     // Добавление ответов пользователя на опрос
-    void AddSurveyPassing(AddSurveyPassingRequest request);
+    int AddSurveyPassing(int surveyId, int userId, IReadOnlyCollection<IReadOnlyCollection<string>> responses);
 
     // Получение ответов пользователя на опрос
-    void GetSurveyPassing(SurveyPassingRequest request);
+    IReadOnlyCollection<IReadOnlyCollection<Response>> GetSurveyPassing(int surveyId, int userId);
 }

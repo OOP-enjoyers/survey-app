@@ -22,7 +22,6 @@ public static class ServiceCollectionExtensions
         collection.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(configuration.GetSection("Infrastructure:Persistence:Postgres:ConnectionString").Value));
 
-        // TODO: add repositories
         collection.AddScoped<IPersistenceContext, PersistenceContext>();
 
         return collection;

@@ -1,19 +1,18 @@
-using SurveyPlatform.Application.Contracts.Models;
 using SurveyPlatform.Application.Models;
 
-namespace SurveyPlatform.Application.Contracts.Repositories;
+namespace SurveyPlatform.Infrastructure.Persistence.Repositories;
 
 public interface ISurveyRepository
 {
     // Добавление опроса
-    int AddSurvey(AddSurveyRequest request);
+    Survey AddSurvey(Survey survey);
 
     // Получение опроса по id
     Survey GetSurvey(int surveyId);
 
     // Изменение опроса
-    void EditSurvey(EditSurveyRequest request);
+    Survey EditSurvey(Survey survey);
 
     // Удаление опроса
-    void RemoveSurvey(int surveyId);
+    Survey RemoveSurvey(int surveyId);
 }

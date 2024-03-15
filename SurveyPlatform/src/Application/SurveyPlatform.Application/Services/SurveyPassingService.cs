@@ -1,27 +1,26 @@
 using SurveyPlatform.Application.Contracts;
-using SurveyPlatform.Application.Contracts.HelpModels;
-using SurveyPlatform.Application.Contracts.Models;
-using SurveyPlatform.Application.Contracts.Repositories;
+using SurveyPlatform.Application.Models;
+using SurveyPlatform.Infrastructure.Persistence.Repositories;
 
 namespace SurveyPlatform.Application.Services;
 
-public class SurveyPassingService(IResponseRepository responseRepository) : ISurveyPassingService
+public class SurveyPassingService(IQuestionRepository questionRepository, IResponseRepository responseRepository) : ISurveyPassingService
 {
-    public void AddSurveyPassing(AddSurveyPassingRequest request)
+    public int AddSurveyPassing(int surveyId, int userId, IReadOnlyCollection<IReadOnlyCollection<string>> responses)
     {
-        int userId = request.UserId;
-
-        foreach (AnswerRequest response in request.Answers)
+        IReadOnlyCollection<Question> questions = questionRepository.GetQuestions(surveyId);
+        int i = 0;
+        foreach (IReadOnlyCollection<string> response in responses)
         {
-            int questionId = response.QuestionId;
-            IReadOnlyCollection<string> content = response.Content;
-
-            responseRepository.Add(userId, questionId, content);
+            responseRepository.AddResponse(new Response(0, response, userId, questions.ElementAt(i).Id));
+            i++;
         }
+
+        return surveyId;
     }
 
-    public void GetSurveyPassing(SurveyPassingRequest request)
+    public IReadOnlyCollection<IReadOnlyCollection<Response>> GetSurveyPassing(int surveyId, int userId)
     {
-        // TODO: сделать
+        return responseRepository.GetResponses(surveyId, userId);
     }
 }

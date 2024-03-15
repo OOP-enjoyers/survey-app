@@ -19,7 +19,7 @@ public class User(
 
     public string Email { get; private set; } = email;
 
-    private string Password { get; set; } = password;
+    public string Password { get; set; } = password;
 }
 
 #pragma warning restore IDE0051

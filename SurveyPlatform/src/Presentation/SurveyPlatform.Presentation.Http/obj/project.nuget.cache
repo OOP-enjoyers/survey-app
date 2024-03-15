@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "s7VqWYyfzPqOXZw+oesh7+Ettdx4mCx1FsdzX75330DLF/teb+S2HDIeNDgCIP5v7BbgMNhg37AWIcX/caXnFA==",
+  "dgSpecHash": "znvKGaSdIvcpavLRfZ84ghjl/7QrqnDCcoQucqxiWH9YTufFvRX9zw+d/1YT1ovAsxC2qPglqeynJKvLhPS5PA==",
   "success": true,
   "projectFilePath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Presentation\\SurveyPlatform.Presentation.Http\\SurveyPlatform.Presentation.Http.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Serge\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.2\\itmo.dev.editorconfig.1.0.2.nupkg.sha512",
+    "C:\\Users\\Serge\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.1\\itmo.dev.editorconfig.1.0.1.nupkg.sha512",
     "C:\\Users\\Serge\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Serge\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
     "C:\\Users\\Serge\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",

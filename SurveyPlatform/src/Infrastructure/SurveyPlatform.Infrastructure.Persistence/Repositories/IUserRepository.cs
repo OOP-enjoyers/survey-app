@@ -1,19 +1,18 @@
-using SurveyPlatform.Application.Contracts.Models;
 using SurveyPlatform.Application.Models;
 
-namespace SurveyPlatform.Application.Contracts.Repositories;
+namespace SurveyPlatform.Infrastructure.Persistence.Repositories;
 
 public interface IUserRepository
 {
     // Добавление пользователя
-    void AddUser(AddUserRequest request);
+    User AddUser(User user);
 
     // Получить пользователя по Id
     User GetUser(int userId);
 
     // Изменение пользователя
-    void EditUser(User user);
+    User EditUser(User user);
 
     // Удаление пользователя
-    void RemoveUser(int userId);
+    User RemoveUser(int userId);
 }
