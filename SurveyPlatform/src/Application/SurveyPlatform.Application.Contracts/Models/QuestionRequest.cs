@@ -1,7 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿namespace SurveyPlatform.Application.Contracts.Models;
 
-namespace SurveyPlatform.Application.Contracts.Models;
-public abstract class QuestionRequest(string title, string description, int typeId, IList<AnswerRequest> answers)
+public abstract class QuestionRequest(string title, string description, int typeId, AnswerRequest answers)
 {
     public string Title { get; } = title;
 
@@ -9,5 +8,5 @@ public abstract class QuestionRequest(string title, string description, int type
 
     public int TypeId { get; } = typeId;
 
-    public IReadOnlyCollection<AnswerRequest> Answers { get; } = new ReadOnlyCollection<AnswerRequest>(answers);
+    public AnswerRequest Answers { get; } = answers;
 }

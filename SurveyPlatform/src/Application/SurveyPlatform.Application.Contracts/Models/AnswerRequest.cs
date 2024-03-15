@@ -2,9 +2,7 @@
 
 namespace SurveyPlatform.Application.Contracts.Models;
 
-public class AnswerRequest(int questionId, IList<string> content)
+public class AnswerRequest(IList<string> content)
 {
-    public int QuestionId { get; } = questionId;
-
-    public IReadOnlyCollection<string> Content { get; set; } = new ReadOnlyCollection<string>(content);
+     public IReadOnlyCollection<string> Content { get; set; } = new ReadOnlyCollection<string>(content);
 }
