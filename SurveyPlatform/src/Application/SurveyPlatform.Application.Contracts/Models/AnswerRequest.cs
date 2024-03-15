@@ -1,6 +1,10 @@
-﻿namespace SurveyPlatform.Application.Contracts.Models;
+﻿using System.Collections.ObjectModel;
 
-public class AnswerRequest(string content)
+namespace SurveyPlatform.Application.Contracts.Models;
+
+public class AnswerRequest(int questionId, IList<string> content)
 {
-    public string Content { get; set; } = content;
+    public int QuestionId { get; } = questionId;
+
+    public IReadOnlyCollection<string> Content { get; set; } = new ReadOnlyCollection<string>(content);
 }

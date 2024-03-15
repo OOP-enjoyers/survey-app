@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SurveyPlatform.Application.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49c964b558aa31e83d0f96a65b01df13a86d5bba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21467e1d25d576f3028be09247d8cbffd0551e3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SurveyPlatform.Application.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SurveyPlatform.Application.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
