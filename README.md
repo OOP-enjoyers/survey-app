@@ -91,6 +91,7 @@
         "description": "SurveyDescription",
         "questions": [
             {
+                "question_id": 1,
                 "title": "QuestionTitle1",
                 "description": "QuestionDescription1",
                 "type_id": 1,
@@ -100,6 +101,7 @@
                 ]
             },
             {
+                "question_id": 2,
                 "title": "QuestionTitle2",
                 "description": "QuestionDescription2",
                 "type_id": 1,
