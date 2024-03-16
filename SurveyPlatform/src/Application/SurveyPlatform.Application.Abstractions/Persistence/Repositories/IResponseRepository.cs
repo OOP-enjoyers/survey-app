@@ -7,8 +7,8 @@ public interface IResponseRepository
     // Добавление ответа
     Response AddResponse(Response response);
 
-    // Получение всех попыток ответов по id опроса и id пользователя
-    IReadOnlyCollection<IReadOnlyCollection<Response>> GetResponses(int surveyId, int userId);
+    // Получение всех попыток ответов по id вопросу и id пользователя
+    IReadOnlyCollection<Response> GetResponses(int questionId, int userId);
 
     // Изменение ответа
     Response EditResponse(Response response);

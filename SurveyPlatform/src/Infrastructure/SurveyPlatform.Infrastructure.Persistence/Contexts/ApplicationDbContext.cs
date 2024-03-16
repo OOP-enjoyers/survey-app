@@ -13,6 +13,12 @@ public class ApplicationDbContext : DbContext
 
     public required DbSet<UserModel> Users { get; set; }
 
+    public required DbSet<SurveyModel> Surveys { get; set; }
+
+    public required DbSet<ResponseModel> Responses { get; set; }
+
+    public required DbSet<QuestionModel> Questions { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);

@@ -34,7 +34,7 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
         IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(survey.Id);
         foreach (Question question in prevQuestions)
         {
-            questionRepository.RemoveQuestion(question);
+            questionRepository.RemoveQuestion(question.Id);
         }
 
         foreach (Question question in questions)
@@ -52,7 +52,7 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
         IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(surveyId);
         foreach (Question question in prevQuestions)
         {
-            questionRepository.RemoveQuestion(question);
+            questionRepository.RemoveQuestion(question.Id);
         }
 
         return surveyId;
