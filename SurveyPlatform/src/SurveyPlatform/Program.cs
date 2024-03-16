@@ -1,5 +1,3 @@
-#pragma warning disable CA1506
-
 using Itmo.Dev.Platform.Common.Extensions;
 using Itmo.Dev.Platform.Logging.Extensions;
 using Microsoft.Extensions.Options;
@@ -15,8 +13,10 @@ builder.Configuration.AddUserSecrets<Program>();
 builder.Services.AddOptions<JsonSerializerSettings>();
 builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<JsonSerializerSettings>>().Value);
 
-builder.Services.AddApplication();
 builder.Services.AddInfrastructurePersistence(builder.Configuration);
+builder.Services.AddConnection(builder.Configuration);
+builder.Services.AddApplication();
+
 builder.Services
     .AddControllers()
     .AddNewtonsoftJson()

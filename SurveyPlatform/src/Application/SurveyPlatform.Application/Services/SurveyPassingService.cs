@@ -1,6 +1,6 @@
-using SurveyPlatform.Application.Contracts;
-using SurveyPlatform.Application.Models;
-using SurveyPlatform.Infrastructure.Persistence.Repositories;
+using SurveyPlatform.Application.Abstractions.Persistence.Repositories;
+using SurveyPlatform.Application.Contracts.Services;
+using SurveyPlatform.Application.Models.Models;
 
 namespace SurveyPlatform.Application.Services;
 

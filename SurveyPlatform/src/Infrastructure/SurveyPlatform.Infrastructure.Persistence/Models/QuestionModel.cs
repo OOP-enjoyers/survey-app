@@ -1,17 +1,13 @@
-﻿#pragma warning disable IDE0051
+﻿namespace SurveyPlatform.Infrastructure.Persistence.Models;
 
-using SurveyPlatform.Application.Models.Enums;
-
-namespace SurveyPlatform.Application.Models;
-
-public class Question(
+public class QuestionModel(
     int id,
     string title,
     string description,
     bool isNecessary,
     IReadOnlyCollection<string> answers,
     int surveyId,
-    QuestionType questionType)
+    int questionTypeId)
 {
     public int Id { get; set; } = id;
 
@@ -25,7 +21,5 @@ public class Question(
 
     public int SurveyId { get; set; } = surveyId;
 
-    public QuestionType QuestionType { get; set; } = questionType;
+    public int QuestionTypeId { get; set; } = questionTypeId;
 }
-
-#pragma warning restore IDE0051

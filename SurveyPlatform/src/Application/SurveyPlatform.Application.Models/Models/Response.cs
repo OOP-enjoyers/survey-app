@@ -1,6 +1,4 @@
-﻿#pragma warning disable IDE0051
-
-namespace SurveyPlatform.Application.Models;
+﻿namespace SurveyPlatform.Application.Models.Models;
 
 public class Response(
     int id,
@@ -16,5 +14,3 @@ public class Response(
 
     public int QuestionId { get; set; } = questionId;
 }
-
-#pragma warning restore IDE0051

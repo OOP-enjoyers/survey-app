@@ -1,6 +1,6 @@
-﻿using SurveyPlatform.Application.Models;
+﻿using SurveyPlatform.Application.Models.Models;
 
-namespace SurveyPlatform.Application.Contracts;
+namespace SurveyPlatform.Application.Contracts.Services;
 
 public interface IUserService
 {

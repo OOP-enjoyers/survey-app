@@ -1,6 +1,6 @@
-using SurveyPlatform.Application.Models;
+using SurveyPlatform.Application.Models.Models;
 
-namespace SurveyPlatform.Infrastructure.Persistence.Repositories;
+namespace SurveyPlatform.Application.Abstractions.Persistence.Repositories;
 
 public interface ISurveyRepository
 {

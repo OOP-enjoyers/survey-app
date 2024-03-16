@@ -1,25 +1,22 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SurveyPlatform.Application.Models;
+﻿#pragma warning disable SA1206
 
-#pragma warning disable IDE0161
-namespace SurveyPlatform.Infrastructure.Persistence.Contexts
-#pragma warning restore IDE0161
+using Microsoft.EntityFrameworkCore;
+using SurveyPlatform.Infrastructure.Persistence.Models;
+
+namespace SurveyPlatform.Infrastructure.Persistence.Contexts;
+
+public class ApplicationDbContext : DbContext
 {
-    public sealed class ApplicationDbContext : DbContext
+    public ApplicationDbContext() { }
+
+    public ApplicationDbContext(DbContextOptions options) : base(options) { }
+
+    public required DbSet<UserModel> Users { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        public DbSet<User>? Users { get; set; }
-
-        public DbSet<Question>? Questions { get; set; }
-
-        public DbSet<Survey>? Surveys { get; set; }
-
-        public DbSet<Response>? Responses { get; set; }
-
-        public ApplicationDbContext() { }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseNpgsql("Host=ep-green-king-a2za032r.eu-central-1.aws.neon.tech/team8;Port=5432;Database=usersdb2;Username=team8_owner;Password=SJkgF5RT7UQL");
-        }
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
     }
 }
+
+#pragma warning restore SA1206
