@@ -39,10 +39,13 @@ C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.AssemblyInfo.cs
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.sourcelink.json
-C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.csproj.CopyComplete
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.dll
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\refint\SurveyPlatform.Infrastructure.Persistence.dll
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.xml
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.pdb
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPlatform.Infrastructure.Persistence.genruntimeconfig.cache
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\ref\SurveyPlatform.Infrastructure.Persistence.dll
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.dll
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.pdb
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.xml
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Infrastructure\SurveyPlatform.Infrastructure.Persistence\obj\Debug\net8.0\SurveyPl.005A68CA.Up2Date

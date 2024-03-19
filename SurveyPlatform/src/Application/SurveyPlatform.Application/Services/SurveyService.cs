@@ -1,38 +1,60 @@
-using SurveyPlatform.Application.Contracts;
-using SurveyPlatform.Application.Contracts.HelpModels;
-using SurveyPlatform.Application.Contracts.Models;
-using SurveyPlatform.Application.Contracts.Repositories;
-using SurveyPlatform.Application.Models;
+using SurveyPlatform.Application.Abstractions.Persistence.Repositories;
+using SurveyPlatform.Application.Contracts.Services;
+using SurveyPlatform.Application.Models.Models;
 
 namespace SurveyPlatform.Application.Services;
 
 public class SurveyService(ISurveyRepository surveyRepository, IQuestionRepository questionRepository) : ISurveyService
 {
     // Добавление опроса
-    public void AddSurvey(AddSurveyRequest request)
+    public int AddSurvey(Survey survey, IReadOnlyCollection<Question> questions)
     {
-        int surveyId = surveyRepository.AddSurvey(request);
-        foreach (QuestionRequest question in request.Questions)
+        Survey addedSurvey = surveyRepository.AddSurvey(survey);
+        foreach (Question question in questions)
         {
-            questionRepository.AddQuestion(question.Title, question.Description, question.Answers, question.TypeId, surveyId);
+            questionRepository.AddQuestion(question);
         }
+
+        return addedSurvey.Id;
     }
 
     // Получение опроса по id
-    public Survey GetSurvey(int surveyId)
+    public (Survey Survey, IReadOnlyCollection<Question> Questions) GetSurvey(int surveyId)
     {
-        return surveyRepository.GetSurvey(surveyId);
+        Survey survey = surveyRepository.GetSurvey(surveyId);
+        IReadOnlyCollection<Question> questions = questionRepository.GetQuestions(surveyId);
+
+        return (survey, questions);
     }
 
     // Изменение опроса
-    public void EditSurvey(EditSurveyRequest request)
+    public int EditSurvey(Survey survey, IReadOnlyCollection<Question> questions)
     {
-        // TODO: Реализовать
+        surveyRepository.EditSurvey(survey);
+        IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(survey.Id);
+        foreach (Question question in prevQuestions)
+        {
+            questionRepository.RemoveQuestion(question.Id);
+        }
+
+        foreach (Question question in questions)
+        {
+            questionRepository.AddQuestion(question);
+        }
+
+        return survey.Id;
     }
 
     // Удаление опроса
-    public void RemoveSurvey(int surveyId)
+    public int RemoveSurvey(int surveyId)
     {
         surveyRepository.RemoveSurvey(surveyId);
+        IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(surveyId);
+        foreach (Question question in prevQuestions)
+        {
+            questionRepository.RemoveQuestion(question.Id);
+        }
+
+        return surveyId;
     }
 }

@@ -8,19 +8,20 @@
     ".NETCoreApp,Version=v8.0": {
       "SurveyPlatform.Presentation.Http/1.0.0": {
         "dependencies": {
-          "Itmo.Dev.Editorconfig": "1.0.2",
+          "Itmo.Dev.Editorconfig": "1.0.1",
           "StyleCop.Analyzers": "1.2.0-beta.435",
+          "SurveyPlatform.Application.Contracts": "1.0.0",
           "System.Linq.Async": "6.0.1"
         },
         "runtime": {
           "SurveyPlatform.Presentation.Http.dll": {}
         }
       },
-      "Itmo.Dev.Editorconfig/1.0.2": {
+      "Itmo.Dev.Editorconfig/1.0.1": {
         "runtime": {
           "lib/netstandard2.0/Itmo.Dev.Editorconfig.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -48,6 +49,25 @@
             "fileVersion": "6.0.1.35981"
           }
         }
+      },
+      "SurveyPlatform.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "Itmo.Dev.Editorconfig": "1.0.1",
+          "SurveyPlatform.Application.Models": "1.0.0",
+          "System.Linq.Async": "6.0.1"
+        },
+        "runtime": {
+          "SurveyPlatform.Application.Contracts.dll": {}
+        }
+      },
+      "SurveyPlatform.Application.Models/1.0.0": {
+        "dependencies": {
+          "Itmo.Dev.Editorconfig": "1.0.1",
+          "System.Linq.Async": "6.0.1"
+        },
+        "runtime": {
+          "SurveyPlatform.Application.Models.dll": {}
+        }
       }
     }
   },
@@ -57,12 +77,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Itmo.Dev.Editorconfig/1.0.2": {
+    "Itmo.Dev.Editorconfig/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7g6+wR4iQlRB9b85zclZtsJQRbK6R3RyYTOprALt+xyj7FNvqnpVY3ErJ0wKyQEuer8FA/TFWx42DfmbHtNbrw==",
-      "path": "itmo.dev.editorconfig/1.0.2",
-      "hashPath": "itmo.dev.editorconfig.1.0.2.nupkg.sha512"
+      "sha512": "sha512-FqmuPkrWQvTmJsGTaG5kgGGPo/trx2/imAiSjkNR+AmBzGp632UHEv2SysTQF5HfyLDSlZQ6Nk1am/S3p6BIuw==",
+      "path": "itmo.dev.editorconfig/1.0.1",
+      "hashPath": "itmo.dev.editorconfig.1.0.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",
@@ -91,6 +111,16 @@
       "sha512": "sha512-0YhHcaroWpQ9UCot3Pizah7ryAzQhNvobLMSxeDIGmnXfkQn8u5owvpOH0K6EVB+z9L7u6Cc4W17Br/+jyttEQ==",
       "path": "system.linq.async/6.0.1",
       "hashPath": "system.linq.async.6.0.1.nupkg.sha512"
+    },
+    "SurveyPlatform.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SurveyPlatform.Application.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

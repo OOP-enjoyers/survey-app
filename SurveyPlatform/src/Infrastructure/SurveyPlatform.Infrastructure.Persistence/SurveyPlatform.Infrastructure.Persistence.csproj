@@ -6,6 +6,7 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+        <ProjectReference Include="..\..\Application\SurveyPlatform.Application.Contracts\SurveyPlatform.Application.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,34 +1,39 @@
-using SurveyPlatform.Application.Contracts;
-using SurveyPlatform.Application.Contracts.Models;
-using SurveyPlatform.Application.Contracts.Repositories;
-using SurveyPlatform.Application.Models;
+using SurveyPlatform.Application.Abstractions.Persistence.Repositories;
+using SurveyPlatform.Application.Contracts.Services;
+using SurveyPlatform.Application.Models.Models;
 
 namespace SurveyPlatform.Application.Services;
 
-public class UserService(IUserRepository userRepository) : IUserService
+public class UserService : IUserService
 {
-    // Добавление пользователя
-    public void AddUser(AddUserRequest request)
+    private readonly IUserRepository _userRepository;
+
+    public UserService(IUserRepository userRepository)
     {
-        userRepository.AddUser(request);
+        _userRepository = userRepository;
+    }
+
+    // Добавление пользователя
+    public int AddUser(User user)
+    {
+        return _userRepository.AddUser(user).Id;
     }
 
     // Получение пользователя по id
     public User GetUser(int userId)
     {
-        return userRepository.GetUser(userId);
+        return _userRepository.GetUser(userId);
     }
 
     // Изменение пользователя
-    public void EditUser(EditUserRequest request)
+    public int EditUser(User user)
     {
-        User user = new(request.UserId, request.Role, request.FullName, request.Email, request.Password);
-        userRepository.EditUser(user);
+        return _userRepository.EditUser(user).Id;
     }
 
     // Удаление пользователя
-    public void RemoveUser(int userId)
+    public int RemoveUser(int userId)
     {
-        userRepository.RemoveUser(userId);
+        return _userRepository.RemoveUser(userId).Id;
     }
 }

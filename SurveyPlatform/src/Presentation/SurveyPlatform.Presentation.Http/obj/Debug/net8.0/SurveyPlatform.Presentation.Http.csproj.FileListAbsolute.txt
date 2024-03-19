@@ -44,3 +44,10 @@ C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Pr
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\obj\Debug\net8.0\SurveyPlatform.Presentation.Http.xml
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\obj\Debug\net8.0\SurveyPlatform.Presentation.Http.pdb
 C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\obj\Debug\net8.0\ref\SurveyPlatform.Presentation.Http.dll
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.dll
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Models.dll
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.pdb
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Contracts.xml
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Models.pdb
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\bin\Debug\net8.0\SurveyPlatform.Application.Models.xml
+C:\Documents\GitHub\survey-app\SurveyPlatform\src\Presentation\SurveyPlatform.Presentation.Http\obj\Debug\net8.0\SurveyPl.60312934.Up2Date

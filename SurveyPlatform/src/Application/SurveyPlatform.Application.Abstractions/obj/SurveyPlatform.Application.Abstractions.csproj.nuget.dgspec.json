@@ -46,7 +46,17 @@
           "dependencies": {
             "Itmo.Dev.Editorconfig": {
               "target": "Package",
-              "version": "[1.0.2, )",
+              "version": "[1.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Itmo.Dev.Platform.Common": {
+              "target": "Package",
+              "version": "[1.1.82, )",
+              "versionCentrallyManaged": true
+            },
+            "Itmo.Dev.Platform.Postgres": {
+              "target": "Package",
+              "version": "[1.1.82, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.EntityFrameworkCore": {
@@ -62,6 +72,11 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.10, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )",
               "versionCentrallyManaged": true
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
@@ -89,10 +104,10 @@
           },
           "centralPackageVersions": {
             "EntityFramework": "[6.4.4, )",
-            "Itmo.Dev.Editorconfig": "[1.0.2, )",
+            "Itmo.Dev.Editorconfig": "[1.0.1, )",
             "Itmo.Dev.Platform.Common": "[1.1.82, )",
-            "Itmo.Dev.Platform.Logging": "[1.0.89, )",
-            "Itmo.Dev.Platform.Postgres": "[1.1.89, )",
+            "Itmo.Dev.Platform.Logging": "[1.0.82, )",
+            "Itmo.Dev.Platform.Postgres": "[1.1.82, )",
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "[7.0.15, )",
             "Microsoft.EntityFrameworkCore": "[7.0.10, )",
             "Microsoft.EntityFrameworkCore.Design": "[7.0.10, )",
@@ -121,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -163,7 +178,7 @@
           "dependencies": {
             "Itmo.Dev.Editorconfig": {
               "target": "Package",
-              "version": "[1.0.2, )",
+              "version": "[1.0.1, )",
               "versionCentrallyManaged": true
             },
             "StyleCop.Analyzers": {
@@ -181,10 +196,10 @@
           },
           "centralPackageVersions": {
             "EntityFramework": "[6.4.4, )",
-            "Itmo.Dev.Editorconfig": "[1.0.2, )",
+            "Itmo.Dev.Editorconfig": "[1.0.1, )",
             "Itmo.Dev.Platform.Common": "[1.1.82, )",
-            "Itmo.Dev.Platform.Logging": "[1.0.89, )",
-            "Itmo.Dev.Platform.Postgres": "[1.1.89, )",
+            "Itmo.Dev.Platform.Logging": "[1.0.82, )",
+            "Itmo.Dev.Platform.Postgres": "[1.1.82, )",
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "[7.0.15, )",
             "Microsoft.EntityFrameworkCore": "[7.0.10, )",
             "Microsoft.EntityFrameworkCore.Design": "[7.0.10, )",
@@ -213,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

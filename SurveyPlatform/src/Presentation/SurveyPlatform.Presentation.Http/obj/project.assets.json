@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Itmo.Dev.Editorconfig/1.0.2": {
+      "Itmo.Dev.Editorconfig/1.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Itmo.Dev.Editorconfig.dll": {}
@@ -51,20 +51,49 @@
             "related": ".xml"
           }
         }
+      },
+      "SurveyPlatform.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Itmo.Dev.Editorconfig": "1.0.1",
+          "SurveyPlatform.Application.Models": "1.0.0",
+          "System.Linq.Async": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/SurveyPlatform.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SurveyPlatform.Application.Contracts.dll": {}
+        }
+      },
+      "SurveyPlatform.Application.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Itmo.Dev.Editorconfig": "1.0.1",
+          "System.Linq.Async": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/SurveyPlatform.Application.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SurveyPlatform.Application.Models.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Itmo.Dev.Editorconfig/1.0.2": {
-      "sha512": "7g6+wR4iQlRB9b85zclZtsJQRbK6R3RyYTOprALt+xyj7FNvqnpVY3ErJ0wKyQEuer8FA/TFWx42DfmbHtNbrw==",
+    "Itmo.Dev.Editorconfig/1.0.1": {
+      "sha512": "FqmuPkrWQvTmJsGTaG5kgGGPo/trx2/imAiSjkNR+AmBzGp632UHEv2SysTQF5HfyLDSlZQ6Nk1am/S3p6BIuw==",
       "type": "package",
-      "path": "itmo.dev.editorconfig/1.0.2",
+      "path": "itmo.dev.editorconfig/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Itmo.Dev.Editorconfig.props",
         "content/Rules/.editorconfig",
-        "itmo.dev.editorconfig.1.0.2.nupkg.sha512",
+        "itmo.dev.editorconfig.1.0.1.nupkg.sha512",
         "itmo.dev.editorconfig.nuspec",
         "lib/netstandard2.0/Itmo.Dev.Editorconfig.dll"
       ]
@@ -156,12 +185,23 @@
         "system.linq.async.6.0.1.nupkg.sha512",
         "system.linq.async.nuspec"
       ]
+    },
+    "SurveyPlatform.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Application/SurveyPlatform.Application.Contracts/SurveyPlatform.Application.Contracts.csproj",
+      "msbuildProject": "../../Application/SurveyPlatform.Application.Contracts/SurveyPlatform.Application.Contracts.csproj"
+    },
+    "SurveyPlatform.Application.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Application/SurveyPlatform.Application.Models/SurveyPlatform.Application.Models.csproj",
+      "msbuildProject": "../../Application/SurveyPlatform.Application.Models/SurveyPlatform.Application.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Itmo.Dev.Editorconfig >= 1.0.2",
+      "Itmo.Dev.Editorconfig >= 1.0.1",
       "StyleCop.Analyzers >= 1.2.0-beta.435",
+      "SurveyPlatform.Application.Contracts >= 1.0.0",
       "System.Linq.Async >= 6.0.1"
     ]
   },
@@ -190,7 +230,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj": {
+              "projectPath": "C:\\Documents\\GitHub\\survey-app\\SurveyPlatform\\src\\Application\\SurveyPlatform.Application.Contracts\\SurveyPlatform.Application.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -206,7 +250,7 @@
         "dependencies": {
           "Itmo.Dev.Editorconfig": {
             "target": "Package",
-            "version": "[1.0.2, )",
+            "version": "[1.0.1, )",
             "versionCentrallyManaged": true
           },
           "StyleCop.Analyzers": {
@@ -224,10 +268,10 @@
         },
         "centralPackageVersions": {
           "EntityFramework": "[6.4.4, )",
-          "Itmo.Dev.Editorconfig": "[1.0.2, )",
+          "Itmo.Dev.Editorconfig": "[1.0.1, )",
           "Itmo.Dev.Platform.Common": "[1.1.82, )",
-          "Itmo.Dev.Platform.Logging": "[1.0.89, )",
-          "Itmo.Dev.Platform.Postgres": "[1.1.89, )",
+          "Itmo.Dev.Platform.Logging": "[1.0.82, )",
+          "Itmo.Dev.Platform.Postgres": "[1.1.82, )",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "[7.0.15, )",
           "Microsoft.EntityFrameworkCore": "[7.0.10, )",
           "Microsoft.EntityFrameworkCore.Design": "[7.0.10, )",
@@ -259,7 +303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Serge\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
