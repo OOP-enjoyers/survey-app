@@ -7,10 +7,10 @@ namespace SurveyPlatform.Application.Services;
 public class SurveyService(ISurveyRepository surveyRepository, IQuestionRepository questionRepository) : ISurveyService
 {
     // Добавление опроса
-    public int AddSurvey(Survey survey, IReadOnlyCollection<Question> questions)
+    public int AddSurvey(Survey survey)
     {
         Survey addedSurvey = surveyRepository.AddSurvey(survey);
-        foreach (Question question in questions)
+        foreach (Question question in survey.Questions)
         {
             questionRepository.AddQuestion(question);
         }
@@ -19,27 +19,29 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
     }
 
     // Получение опроса по id
-    public (Survey Survey, IReadOnlyCollection<Question> Questions) GetSurvey(int surveyId)
+    public Survey GetSurvey(int surveyId)
     {
         Survey survey = surveyRepository.GetSurvey(surveyId);
-        IReadOnlyCollection<Question> questions = questionRepository.GetQuestions(surveyId);
+        survey.Questions = questionRepository.GetQuestions(surveyId);
 
-        return (survey, questions);
+        return survey;
     }
 
     // Изменение опроса
-    public int EditSurvey(Survey survey, IReadOnlyCollection<Question> questions)
+    public int EditSurvey(Survey survey)
     {
         surveyRepository.EditSurvey(survey);
+
         IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(survey.Id);
+
+        foreach (Question question in survey.Questions)
+        {
+            questionRepository.AddQuestion(question);
+        }
+
         foreach (Question question in prevQuestions)
         {
             questionRepository.RemoveQuestion(question.Id);
-        }
-
-        foreach (Question question in questions)
-        {
-            questionRepository.AddQuestion(question);
         }
 
         return survey.Id;
