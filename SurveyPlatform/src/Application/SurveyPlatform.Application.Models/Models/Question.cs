@@ -8,7 +8,7 @@ public class Question(
     string description,
     bool isNecessary,
     IReadOnlyCollection<string> answers,
-    int surveyId,
+    Survey survey,
     QuestionType questionType)
 {
     public int Id { get; set; } = id;
@@ -21,7 +21,7 @@ public class Question(
 
     public IReadOnlyCollection<string> Answers { get; set; } = answers;
 
-    public int SurveyId { get; set; } = surveyId;
+    public Survey Survey { get; set; } = survey;
 
     public QuestionType QuestionType { get; set; } = questionType;
 }
