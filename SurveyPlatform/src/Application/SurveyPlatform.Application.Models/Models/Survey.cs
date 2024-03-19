@@ -15,4 +15,6 @@ public class Survey(
     public string Description { get; private set; } = description;
 
     public SurveyStatus SurveyStatus { get; set; } = surveyStatus;
+
+    public IReadOnlyCollection<Question>? Questions { get; set; }
 }
