@@ -3,14 +3,14 @@
 public class Response(
     int id,
     IReadOnlyCollection<string> content,
-    int userId,
-    int questionId)
+    User user,
+    Question question)
 {
     public int Id { get; private set; } = id;
 
     public IReadOnlyCollection<string> Content { get; private set; } = content;
 
-    public int UserId { get; set; } = userId;
+    public User User { get; set; } = user;
 
-    public int QuestionId { get; set; } = questionId;
+    public Question Question { get; set; } = question;
 }
