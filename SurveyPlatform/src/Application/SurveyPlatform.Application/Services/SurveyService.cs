@@ -10,9 +10,12 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
     public int AddSurvey(Survey survey)
     {
         Survey addedSurvey = surveyRepository.AddSurvey(survey);
-        foreach (Question question in survey.Questions)
+        if (survey.Questions != null)
         {
-            questionRepository.AddQuestion(question);
+            foreach (Question question in survey.Questions)
+            {
+                questionRepository.AddQuestion(question);
+            }
         }
 
         return addedSurvey.Id;
@@ -34,9 +37,12 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
 
         IReadOnlyCollection<Question> prevQuestions = questionRepository.GetQuestions(survey.Id);
 
-        foreach (Question question in survey.Questions)
+        if (survey.Questions != null)
         {
-            questionRepository.AddQuestion(question);
+            foreach (Question question in survey.Questions)
+            {
+                questionRepository.AddQuestion(question);
+            }
         }
 
         foreach (Question question in prevQuestions)
