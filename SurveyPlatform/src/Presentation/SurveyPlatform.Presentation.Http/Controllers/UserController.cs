@@ -8,26 +8,57 @@ namespace SurveyPlatform.Presentation.Http.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-#pragma warning disable IDE0052
     private readonly IUserService _userService;
-#pragma warning restore IDE0052
 
     public UserController(IUserService userService)
     {
         _userService = userService;
     }
 
-    [HttpGet("{id}")]
-    public ActionResult<User> Get(int id)
-    {
-        User user = _userService.GetUser(id);
-        return user == null ? NotFound() : Ok(user);
-    }
-
     [HttpPost]
     public ActionResult<User> Post(User user)
     {
         _userService.AddUser(user);
-        return CreatedAtAction(nameof(Get), new { id = user.Id }, user);
+
+        return Ok();
+    }
+
+    [HttpGet("{id}")]
+    public ActionResult<User> Get(int id)
+    {
+        User user = _userService.GetUser(id);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(user);
+    }
+
+    [HttpPut]
+    public IActionResult Edit(User user)
+    {
+        if (_userService.GetUser(user.Id) == null)
+        {
+            return NotFound();
+        }
+
+        _userService.EditUser(user);
+
+        return Ok();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Remove(int id)
+    {
+        User user = _userService.GetUser(id);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        _userService.RemoveUser(id);
+
+        return Ok();
     }
 }

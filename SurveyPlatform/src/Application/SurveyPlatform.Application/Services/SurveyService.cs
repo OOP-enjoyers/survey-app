@@ -25,9 +25,12 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
     public Survey GetSurvey(int surveyId)
     {
         Survey survey = surveyRepository.GetSurvey(surveyId);
-        survey.Questions = questionRepository.GetQuestions(surveyId);
+        if (survey != null)
+        {
+            survey.Questions = questionRepository.GetQuestions(surveyId);
+        }
 
-        return survey;
+        return survey!;
     }
 
     // Изменение опроса

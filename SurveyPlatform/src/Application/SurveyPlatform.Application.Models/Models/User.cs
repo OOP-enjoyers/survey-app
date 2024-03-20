@@ -4,15 +4,15 @@ namespace SurveyPlatform.Application.Models.Models;
 
 public class User
 {
-    public int Id { get; private set; }
+    public int Id { get; set; }
 
-    public UserRole UserRole { get; private set; }
+    public UserRole UserRole { get; set; }
 
-    public string FullName { get; private set; }
+    public string FullName { get; set; }
 
-    public string Email { get; private set; }
+    public string Email { get; set; }
 
-    public string Password { get; private set; }
+    public string Password { get; set; }
 
     public User(int id, UserRole userRole, string fullName, string email, string password)
     {

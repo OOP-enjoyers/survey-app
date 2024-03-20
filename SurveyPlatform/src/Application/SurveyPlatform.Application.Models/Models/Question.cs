@@ -2,23 +2,30 @@
 
 namespace SurveyPlatform.Application.Models.Models;
 
-public class Question(
-    int id,
-    string title,
-    string description,
-    bool isNecessary,
-    IReadOnlyCollection<string> answers,
-    QuestionType questionType)
+public class Question
 {
-    public int Id { get; set; } = id;
+    public int Id { get; set; }
 
-    public string Title { get; set; } = title;
+    public string Title { get; set; }
 
-    public string Description { get; set; } = description;
+    public string Description { get; set; }
 
-    public bool IsNecessary { get; set; } = isNecessary;
+    public bool IsNecessary { get; set; }
 
-    public IReadOnlyCollection<string> Answers { get; set; } = answers;
+    public string[] Answers { get; set; }
 
-    public QuestionType QuestionType { get; set; } = questionType;
+    public int SurveyId { get; set; }
+
+    public QuestionType QuestionType { get; set; }
+
+    public Question(int id, string title, string description, bool isNecessary, string[] answers, int surveyId, QuestionType questionType)
+    {
+        Id = id;
+        Title = title;
+        Description = description;
+        IsNecessary = isNecessary;
+        Answers = answers;
+        SurveyId = surveyId;
+        QuestionType = questionType;
+    }
 }

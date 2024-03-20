@@ -24,7 +24,7 @@ public class SurveyRepository(ApplicationDbContext context) : RepositoryBase<Sur
     public Survey GetSurvey(int surveyId)
     {
         var surveyModel = DbSet.FirstOrDefault(s => s.Id == surveyId);
-        return (surveyModel != null ? new Survey(surveyModel.Id, surveyModel.Title, surveyModel.Description, (SurveyStatus)surveyModel.SurveyStatus) : null)!;
+        return (surveyModel != null ? new Survey(surveyModel.Id, surveyModel.Title, surveyModel.Description, (SurveyStatus)surveyModel.SurveyStatusId) : null)!;
     }
 
     public Survey EditSurvey(Survey survey)
@@ -47,7 +47,7 @@ public class SurveyRepository(ApplicationDbContext context) : RepositoryBase<Sur
         {
             DbSet.Remove(surveyModel);
             _context.SaveChanges();
-            return new Survey(surveyModel.Id, surveyModel.Title, surveyModel.Description, (SurveyStatus)surveyModel.SurveyStatus);
+            return new Survey(surveyModel.Id, surveyModel.Title, surveyModel.Description, (SurveyStatus)surveyModel.SurveyStatusId);
         }
 
         return null!;
@@ -69,7 +69,7 @@ public class SurveyRepository(ApplicationDbContext context) : RepositoryBase<Sur
 
     protected override void UpdateModel(SurveyModel model, Survey entity)
     {
-        model.SurveyStatus = (int)entity.SurveyStatus;
+        model.SurveyStatusId = (int)entity.SurveyStatus;
         model.Title = entity.Title;
         model.Description = entity.Description;
     }

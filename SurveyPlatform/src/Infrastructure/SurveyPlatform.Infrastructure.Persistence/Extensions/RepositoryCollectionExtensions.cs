@@ -18,7 +18,7 @@ public static class RepositoryCollectionExtensions
         collection.AddScoped<IUserRepository, UserRepository>();
         collection.AddScoped<ISurveyRepository, SurveyRepository>();
         collection.AddScoped<IResponseRepository, ResponseRepository>();
-        collection.AddScoped<IQuestionRepository, IQuestionRepository>();
+        collection.AddScoped<IQuestionRepository, QuestionRepository>();
         collection.AddScoped<DbContext, ApplicationDbContext>();
 
         return collection;

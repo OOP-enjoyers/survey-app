@@ -18,6 +18,7 @@ public class QuestionRepository(ApplicationDbContext context) : RepositoryBase<Q
         var questionModel = MapFrom(question);
         DbSet.Add(questionModel);
         _context.SaveChanges();
+
         return question;
     }
 

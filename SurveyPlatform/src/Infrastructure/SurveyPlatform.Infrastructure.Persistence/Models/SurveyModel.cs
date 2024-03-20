@@ -12,5 +12,5 @@ public class SurveyModel(
 
     public string Description { get; set; } = description;
 
-    public int SurveyStatus { get; set; } = surveyStatusId;
+    public int SurveyStatusId { get; set; } = surveyStatusId;
 }
