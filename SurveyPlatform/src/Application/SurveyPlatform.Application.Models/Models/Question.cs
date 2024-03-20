@@ -8,6 +8,7 @@ public class Question(
     string description,
     bool isNecessary,
     IReadOnlyCollection<string> answers,
+    int surveyId,
     QuestionType questionType)
 {
     public int Id { get; set; } = id;
@@ -19,6 +20,8 @@ public class Question(
     public bool IsNecessary { get; set; } = isNecessary;
 
     public IReadOnlyCollection<string> Answers { get; set; } = answers;
+
+    public int SurveyId { get; set; } = surveyId;
 
     public QuestionType QuestionType { get; set; } = questionType;
 }
