@@ -23,11 +23,11 @@ public class ResponseRepository(ApplicationDbContext context) : RepositoryBase<R
     public IReadOnlyCollection<Response> GetResponses(int questionId, int userId)
     {
         List<ResponseModel> allResponseModels = [.. DbSet.Where(r => r.UserId == userId && r.QuestionId == questionId)];
-        IReadOnlyCollection<Response> allResponses = [];
+        var allResponses = new List<Response>();
 
         foreach (ResponseModel responseModel in allResponseModels)
         {
-            allResponses.Append(new Response(responseModel.Id, responseModel.Content, responseModel.UserId, responseModel.QuestionId));
+            allResponses.Add(new Response(responseModel.Id, responseModel.Content, responseModel.UserId, responseModel.QuestionId));
         }
 
         return allResponses;

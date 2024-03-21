@@ -14,6 +14,7 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
         {
             foreach (Question question in survey.Questions)
             {
+                question.SurveyId = addedSurvey.Id;
                 questionRepository.AddQuestion(question);
             }
         }
@@ -44,6 +45,7 @@ public class SurveyService(ISurveyRepository surveyRepository, IQuestionReposito
         {
             foreach (Question question in survey.Questions)
             {
+                question.SurveyId = survey.Id;
                 questionRepository.AddQuestion(question);
             }
         }

@@ -21,17 +21,25 @@ public class SurveyPassingService(IQuestionRepository questionRepository, IRespo
 
     public IReadOnlyCollection<IReadOnlyCollection<Response>> GetSurveyPassing(int surveyId, int userId)
     {
-        // Список вопросов в данном опросе
         var questions = (List<Question>)questionRepository.GetQuestions(surveyId);
 
-        var userResponses = new List<List<Response>>();
-
-        foreach (Question question in questions)
+        var userResponsesByAttempt = new List<List<Response>>();
+        var questionResponsesFirst = (List<Response>)responseRepository.GetResponses(questions[0].Id, userId);
+        for (int i = 0; i < questionResponsesFirst.Count; i++)
         {
-            var questionResponses = (List<Response>)responseRepository.GetResponses(question.Id, userId);
-            userResponses.Add(questionResponses);
+            userResponsesByAttempt.Add(new List<Response>());
         }
 
-        return userResponses;
+        foreach (var question in questions)
+        {
+            var questionResponses = (List<Response>)responseRepository.GetResponses(question.Id, userId);
+
+            for (int j = 0; j < questionResponses.Count; j++)
+            {
+                userResponsesByAttempt[j].Add(questionResponses[j]);
+            }
+        }
+
+        return userResponsesByAttempt;
     }
 }

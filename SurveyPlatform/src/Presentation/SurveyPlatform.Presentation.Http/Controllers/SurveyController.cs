@@ -5,7 +5,7 @@ using SurveyPlatform.Application.Models.Models;
 namespace SurveyPlatform.Presentation.Http.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("survey")]
 public class SurveyController : ControllerBase
 {
     private readonly ISurveyService _surveyService;
@@ -15,15 +15,15 @@ public class SurveyController : ControllerBase
         _surveyService = surveyService;
     }
 
-    [HttpPost]
-    public ActionResult<Survey> Post(Survey survey)
+    [HttpPost("add")]
+    public ActionResult Add(Survey survey)
     {
         _surveyService.AddSurvey(survey);
 
         return Ok();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("get")]
     public ActionResult<Survey> Get(int id)
     {
         Survey survey = _surveyService.GetSurvey(id);
@@ -35,7 +35,7 @@ public class SurveyController : ControllerBase
         return Ok(survey);
     }
 
-    [HttpPut]
+    [HttpPut("edit")]
     public IActionResult Edit(Survey survey)
     {
         if (_surveyService.GetSurvey(survey.Id) == null)
@@ -48,7 +48,7 @@ public class SurveyController : ControllerBase
         return Ok();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("remove")]
     public IActionResult Remove(int id)
     {
         Survey survey = _surveyService.GetSurvey(id);

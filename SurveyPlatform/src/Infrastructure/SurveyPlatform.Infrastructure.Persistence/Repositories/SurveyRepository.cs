@@ -18,7 +18,7 @@ public class SurveyRepository(ApplicationDbContext context) : RepositoryBase<Sur
         var surveyModel = MapFrom(survey);
         DbSet.Add(surveyModel);
         _context.SaveChanges();
-        return survey;
+        return MapTo(surveyModel);
     }
 
     public Survey GetSurvey(int surveyId)
@@ -60,6 +60,15 @@ public class SurveyRepository(ApplicationDbContext context) : RepositoryBase<Sur
             entity.Title,
             entity.Description,
             (int)entity.SurveyStatus);
+    }
+
+    protected Survey MapTo(SurveyModel entity)
+    {
+        return new Survey(
+            entity.Id,
+            entity.Title,
+            entity.Description,
+            (SurveyStatus)entity.SurveyStatusId);
     }
 
     protected override bool Equal(Survey entity, SurveyModel model)

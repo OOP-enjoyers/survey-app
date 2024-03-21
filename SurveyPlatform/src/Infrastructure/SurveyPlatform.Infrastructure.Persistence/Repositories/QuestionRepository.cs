@@ -25,11 +25,11 @@ public class QuestionRepository(ApplicationDbContext context) : RepositoryBase<Q
     public IReadOnlyCollection<Question> GetQuestions(int surveyId)
     {
         IReadOnlyCollection<QuestionModel> allQuestionModels = [.. DbSet.Where(q => q.SurveyId == surveyId)];
-        IReadOnlyCollection<Question> allQuestions = [];
+        var allQuestions = new List<Question>();
 
         foreach (QuestionModel questionModel in allQuestionModels)
         {
-            allQuestions.Append(new Question(questionModel.Id, questionModel.Title, questionModel.Description, questionModel.IsNecessary, questionModel.Answers, questionModel.SurveyId, (QuestionType)questionModel.QuestionTypeId));
+            allQuestions.Add(new Question(questionModel.Id, questionModel.Title, questionModel.Description, questionModel.IsNecessary, questionModel.Answers, questionModel.SurveyId, (QuestionType)questionModel.QuestionTypeId));
         }
 
         return allQuestions;
