@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="AutoMapper" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\..\Application\SurveyPlatform.Application.Contracts\SurveyPlatform.Application.Contracts.csproj" />
     </ItemGroup>
 

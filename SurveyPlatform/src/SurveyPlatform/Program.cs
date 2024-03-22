@@ -1,3 +1,4 @@
+#pragma warning disable CA1506 // Избегать чрезмерной взаимозависимости классов
 using Itmo.Dev.Platform.Common.Extensions;
 using Itmo.Dev.Platform.Logging.Extensions;
 using Microsoft.Extensions.Options;
@@ -28,6 +29,8 @@ builder.Services.AddSwaggerGen();
 builder.Host.AddPlatformSerilog(builder.Configuration);
 builder.Services.AddUtcDateTimeProvider();
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 WebApplication app = builder.Build();
 
 app.UseRouting();
@@ -37,3 +40,4 @@ app.UseSwaggerUI();
 app.MapControllers();
 
 await app.RunAsync();
+#pragma warning restore CA1506 // Избегать чрезмерной взаимозависимости классов
