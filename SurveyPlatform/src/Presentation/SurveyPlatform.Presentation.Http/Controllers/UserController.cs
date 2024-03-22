@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using SurveyPlatform.Application.Contracts.Services;
+using SurveyPlatform.Application.Models.DTO.UserDto;
 using SurveyPlatform.Application.Models.Models;
 
 namespace SurveyPlatform.Presentation.Http.Controllers;
@@ -9,22 +12,24 @@ namespace SurveyPlatform.Presentation.Http.Controllers;
 public class UserController : ControllerBase
 {
     private readonly IUserService _userService;
+    private readonly IMapper _mapper;
 
-    public UserController(IUserService userService)
+    public UserController(IUserService userService, IMapper mapper)
     {
         _userService = userService;
+        _mapper = mapper;
     }
 
     [HttpPost("add")]
-    public ActionResult Add(User user)
+    public ActionResult Add(CreateUserDto userDto)
     {
+        User user = _mapper.Map<User>(userDto);
         _userService.AddUser(user);
-
         return Ok();
     }
 
     [HttpGet("get")]
-    public ActionResult<User> Get(int id)
+    public ActionResult<GetUserDto> Get(int id)
     {
         User user = _userService.GetUser(id);
         if (user == null)
@@ -32,17 +37,19 @@ public class UserController : ControllerBase
             return NotFound();
         }
 
-        return Ok(user);
+        GetUserDto userDto = _mapper.Map<GetUserDto>(user);
+        return Ok(userDto);
     }
 
     [HttpPut("edit")]
-    public IActionResult Edit(User user)
+    public IActionResult Edit(UpdateUserDto userDto)
     {
-        if (_userService.GetUser(user.Id) == null)
+        if (_userService.GetUser(userDto.Id) == null)
         {
             return NotFound();
         }
 
+        User user = _mapper.Map<User>(userDto);
         _userService.EditUser(user);
 
         return Ok();

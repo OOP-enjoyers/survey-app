@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SurveyPlatform.Application.Contracts.Services;
+using SurveyPlatform.Application.Models.DTO.ResponseDto;
 using SurveyPlatform.Application.Models.Models;
 
 namespace SurveyPlatform.Presentation.Http.Controllers;
@@ -9,10 +11,12 @@ namespace SurveyPlatform.Presentation.Http.Controllers;
 public class SurveyPassingController : ControllerBase
 {
     private readonly ISurveyPassingService _surveyPassingService;
+    private readonly IMapper _mapper;
 
-    public SurveyPassingController(ISurveyPassingService surveyPassingService)
+    public SurveyPassingController(ISurveyPassingService surveyPassingService, IMapper mapper)
     {
         _surveyPassingService = surveyPassingService;
+        _mapper = mapper;
     }
 
     [HttpPost("add")]
@@ -24,20 +28,22 @@ public class SurveyPassingController : ControllerBase
     }
 
     [HttpGet("get")]
-    public ActionResult<IReadOnlyCollection<IReadOnlyCollection<Response>>> Get(int surveyId, int userId)
+    public ActionResult<IReadOnlyCollection<IReadOnlyCollection<GetResponseDto>>> Get(int surveyId, int userId)
     {
         IReadOnlyCollection<IReadOnlyCollection<Response>> responses = _surveyPassingService.GetSurveyPassing(surveyId, userId);
-
         if (responses.Count == 0)
         {
             return NotFound();
         }
 
-        return Ok(responses);
+        IReadOnlyCollection<IReadOnlyCollection<GetResponseDto>> responseDtos = responses
+                    .Select(responses => responses.Select(response => _mapper.Map<GetResponseDto>(response)).ToList())
+                    .ToList();
+        return Ok(responseDtos);
     }
 
     [HttpGet("get_last")]
-    public ActionResult<IReadOnlyCollection<Response>> GetLast(int surveyId, int userId)
+    public ActionResult<IReadOnlyCollection<GetResponseDto>> GetLast(int surveyId, int userId)
     {
         IReadOnlyCollection<IReadOnlyCollection<Response>> responses = _surveyPassingService.GetSurveyPassing(surveyId, userId);
 
@@ -46,6 +52,9 @@ public class SurveyPassingController : ControllerBase
             return NotFound();
         }
 
-        return Ok(responses.Last());
+        IReadOnlyCollection<IReadOnlyCollection<GetResponseDto>> responseDtos = responses
+                    .Select(responses => responses.Select(response => _mapper.Map<GetResponseDto>(response)).ToList())
+                    .ToList();
+        return Ok(responseDtos.Last());
     }
 }
