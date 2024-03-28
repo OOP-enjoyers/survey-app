@@ -19,6 +19,6 @@ public class UpdateUserDto
         UserRole = userRole;
         FullName = fullName;
         Email = email;
-        Password = password;    
+        Password = password;
     }
 }

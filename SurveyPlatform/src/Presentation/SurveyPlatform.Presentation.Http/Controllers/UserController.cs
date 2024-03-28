@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
 using SurveyPlatform.Application.Contracts.Services;
 using SurveyPlatform.Application.Models.DTO.UserDto;
 using SurveyPlatform.Application.Models.Models;
