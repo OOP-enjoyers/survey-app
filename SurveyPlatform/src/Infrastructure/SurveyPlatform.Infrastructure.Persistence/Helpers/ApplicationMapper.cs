@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using SurveyPlatform.Application.Models.DTO;
 using SurveyPlatform.Application.Models.DTO.ResponseDto;
 using SurveyPlatform.Application.Models.DTO.SurveyDto;
 using SurveyPlatform.Application.Models.DTO.UserDto;
@@ -10,15 +9,13 @@ public class ApplicationMapper : Profile
 {
    public ApplicationMapper()
     {
-        CreateMap<User, GetUserDto>();
-        CreateMap<CreateUserDto, User>();
-        CreateMap<UpdateUserDto, User>();
+        CreateMap<CreateUserDto, User>().ReverseMap();
+        CreateMap<UpdateUserDto, User>().ReverseMap();
 
-        CreateMap<Survey, GetSurveyDto>();
-        CreateMap<CreateSurveyDto, Survey>();
-        CreateMap<UpdateSurveyDto, Survey>();
+        CreateMap<Survey, GetSurveyDto>().ReverseMap();
+        CreateMap<CreateSurveyDto, Survey>().ReverseMap();
+        CreateMap<UpdateSurveyDto, Survey>().ReverseMap();
 
-        CreateMap<Response, UpdateResponseDto>();
-        CreateMap<Question, QuestionDto>();
+        CreateMap<Response, UpdateResponseDto>().ReverseMap();
     }
 }
