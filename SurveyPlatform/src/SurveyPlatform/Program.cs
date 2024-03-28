@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using SurveyPlatform.Application.Extensions;
 using SurveyPlatform.Infrastructure.Persistence.Extensions;
+using SurveyPlatform.Infrastructure.Persistence.Helpers;
 using SurveyPlatform.Presentation.Http.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -29,7 +30,7 @@ builder.Services.AddSwaggerGen();
 builder.Host.AddPlatformSerilog(builder.Configuration);
 builder.Services.AddUtcDateTimeProvider();
 
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 
 WebApplication app = builder.Build();
 
