@@ -11,6 +11,11 @@ public class CreateUserDto
 
     public string Password { get; set; }
 
+#pragma warning disable CS8618 // Поле, не допускающее значения NULL, должно содержать значение, отличное от NULL, при выходе из конструктора. Возможно, стоит объявить поле как допускающее значения NULL.
+    public CreateUserDto()
+#pragma warning restore CS8618 // Поле, не допускающее значения NULL, должно содержать значение, отличное от NULL, при выходе из конструктора. Возможно, стоит объявить поле как допускающее значения NULL.
+    { }
+
     public CreateUserDto(UserRole userRole, string fullName, string email, string password)
     {
         UserRole = userRole;
